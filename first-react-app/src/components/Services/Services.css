@@ -1,0 +1,10 @@
+.services-wrapper {
+    border: 2px solid salmon;
+    padding: 15px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}

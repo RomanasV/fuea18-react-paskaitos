@@ -1,0 +1,13 @@
+.main-nav {
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 15px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}

@@ -1,38 +1,24 @@
-import logo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Goods from './components/Goods/Goods'
+import Navigation from './components/Navigation/Navigation'
+import Services from './components/Services/Services'
 
 function App() {
-  const answer = 2 + 2
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
+      <Navigation />
 
-        <a href="https://react.dev" target="_blank">
-          <img src={logo} className="logo react" alt="React logo" />
-        </a>
-      </div>
 
-      <h1>Vite + React</h1>
+      <main>
+        <h1>Mano puslapis</h1>
 
-      <h2>2 + 2 = {answer}</h2>
+        <Services />
+        <Goods />
+      </main>
 
-      <div className="card">
-        <button>
-          count is
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <footer>
+        <p>Footer</p>
+      </footer>
     </>
   )
 }
