@@ -1,9 +1,9 @@
 function ServiceItem(props) {
-    // const title = props.title
-    // const description = props.description
-    // const buttonText = props.buttonText
+    // const title = props.data.title
+    // const description = props.data.description
+    // const buttonText = props.data.buttonText
 
-    const { title, description, buttonText } = props
+    const { title, description, buttonText } = props.data
 
     if (!title && !description && !buttonText) {
         return

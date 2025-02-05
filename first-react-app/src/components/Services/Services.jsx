@@ -25,22 +25,27 @@ const servicesData = [
 ]
 
 function Services() {
-    const servicesList = servicesData.map((item, index) => (
-        <ServiceItem 
-            key={index}
-            title={item.title} 
-            description={item.description} 
-            buttonText={item.buttonText} 
-        />
-    ))
+    // Pirmas budas: perduodant visus props atskirai
+    // const servicesList = servicesData.map((item, index) => (
+    //     <ServiceItem 
+    //         key={index}
+    //         title={item.title} 
+    //         description={item.description} 
+    //         buttonText={item.buttonText} 
+    //     />
+    // ))
+
+    // Antras budas: perduodant viena props kaip objekta
+    // const servicesList = servicesData.map((item, index) => <ServiceItem key={index} data={item} /> )
 
     return (
         <div className='services-wrapper'>
-
             <h2 id="asasd" className='section-title'>Services:</h2>
 
             <div className='service-list'>
-                {servicesList}
+                {servicesData.map((item, index) => <ServiceItem key={index} data={item} /> )}
+
+                {/* {servicesList} */}
 
                 {/* {servicesData.map((item, index) => (
                     <ServiceItem 
