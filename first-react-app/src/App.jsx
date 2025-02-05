@@ -1,27 +1,27 @@
 import './App.css'
-import Goods from './components/Goods/Goods'
-import Navigation from './components/Navigation/Navigation'
 import Services from './components/Services/Services'
+// import Goods from './components/Goods/Goods'
+// import Navigation from './components/Navigation/Navigation'
 
-import logo from './assets/react.svg'
-import CustomButton from './components/CustomButton'
-import Container from './components/Container/Container'
+// import logo from './assets/react.svg'
+// import CustomButton from './components/CustomButton'
+// import Container from './components/Container/Container'
 
 function App() {
   return (
     <>
-      <Container>
+      {/* <Container>
         <Navigation />
-      </Container>
+      </Container> */}
 
       <main>
-        <h1>Mano puslapis</h1>
+        {/* <h1>Mano puslapis</h1> */}
 
         <Services />
-        <Goods />
+        {/* <Goods /> */}
       </main>
 
-      <footer>
+      {/* <footer>
         <Container>
           <p>Footer</p>
 
@@ -37,7 +37,7 @@ function App() {
           </CustomButton>
         </Container>
         
-      </footer>
+      </footer> */}
     </>
   )
 }
