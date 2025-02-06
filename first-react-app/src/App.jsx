@@ -1,5 +1,5 @@
 // import BasicsPage from './pages/BasicsPage/BasicsPage'
-import EventsPage from "./pages/EventsPage"
+import EventsPage from "./pages/EventsPage/EventsPage"
 
 function App() {
   return (

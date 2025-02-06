@@ -1,0 +1,28 @@
+1. Sukurti React komponentą, kuris atvaizduoja skaičių ir valdymo mygtukus.
+2. Komponento būsenoje (useState) saugoti skaičių, kuris prasideda nuo 5.
+3. Atvaizduoti h3 elementą su šia būsena.
+4. Sukurti du mygtukus "+" ir "-", kurie keičia skaičiaus reikšmę:
+   4.1. "+" padidina skaičių.
+   4.2. "-" sumažina skaičių.
+5. Abu mygtukai turi turėti „onClick” event’us, kurie keičia būsenoje esantį skaičių.
+
+6. Jeigu skaičius yra mažesnis nei 2, "-" mygtukas turi būti išjungtas (disabled).
+7. Jeigu skaičius yra 10, "+" mygtukas turi būti išjungtas (disabled).
+
+8. Jeigu skaičius yra 5 arba daugiau, jo spalva turėtų būti žalia. Kitu atveju – raudona.
+
+9. Sukurti papildomą mygtuką "Reset", kuris atstato skaičių į pradinę reikšmę (5).
+
+10. Sukurti du naujus mygtukus:
+    10.1. Vienas prideda 2 prie skaičiaus.
+    10.2. Kitas atimama 2 iš skaičiaus.
+
+11. Sukurti input (number tipo), kurio reikšmė įrašius būtų priskirta skaičiui (h3 elementui).
+
+12. Sukurti naują h4 elementą su tekstu "Balai:".
+13. Sukurti ul elementą, skirtą išsaugoti skaičiaus reikšmes.
+14. Pridėti mygtuką "Įrašyti balą", kuris:
+    14.1. Paima skaičių iš h3.
+    14.2. Sukuria naują li elementą ir prideda jį į ul.
+    14.3. li elemento tekstas turi būti tokios pačios spalvos kaip h3.
+    14.4. Kiekviename li elemente turi būti ištrynimo mygtukas, kuris pašalina tą li iš sąrašo.
