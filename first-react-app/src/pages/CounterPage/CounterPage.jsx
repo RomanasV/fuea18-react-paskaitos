@@ -7,16 +7,17 @@ function CounterPage() {
     const [grades, setGrades] = useState([1, 5, 8])
 
     const inputHandler = event => setCount(event.target.value)
+    
+    // const minus5Handler = () => setCount(prevState => prevState - 5)
+    // const minus2Handler = () => setCount(prevState => prevState - 2)
+    // const minus1Handler = () => setCount(prevState => prevState - 1)
+    // const plus1Handler = () => setCount(prevState => prevState + 1)
+    // const plus2Handler = () => setCount(prevState => prevState + 2)
+    // const plus5Handler = () => setCount(prevState => prevState + 5)
 
-    const minus5Handler = () => setCount(prevState => prevState - 5)
-    const minus2Handler = () => setCount(prevState => prevState - 2)
-    const minus1Handler = () => setCount(prevState => prevState - 1)
+    const countHandler = num => setCount(prevState => prevState + num)
     
     const resetHandler = () => setCount(initialValue)
-
-    const plus1Handler = () => setCount(prevState => prevState + 1)
-    const plus2Handler = () => setCount(prevState => prevState + 2)
-    const plus5Handler = () => setCount(prevState => prevState + 5)
 
     const addGradeHandler = () => setGrades(prevState => [count, ...prevState])
 
@@ -48,13 +49,25 @@ function CounterPage() {
 
             <h3 style={{ color: getColor(count) }}>{count}</h3>
 
-            <button onClick={minus5Handler} disabled={count < 6}>-5</button>
+            {/* <button onClick={minus5Handler} disabled={count < 6}>-5</button>
             <button onClick={minus2Handler} disabled={count < 3}>-2</button>
-            <button onClick={minus1Handler} disabled={count < 2}>-1</button>
+            <button onClick={minus1Handler} disabled={count < 2}>-1</button> */}
+           
+            <button onClick={() => countHandler(-5)} disabled={count < 6}>-5</button>
+            <button onClick={() => countHandler(-2)} disabled={count < 3}>-2</button>
+            <button onClick={() => countHandler(-1)} disabled={count < 2}>-1</button>
+           
             <button onClick={resetHandler}>Reset</button>
-            <button onClick={plus1Handler} disabled={count > 9}>+1</button>
+
+            {/* <button onClick={plus1Handler} disabled={count > 9}>+1</button>
             <button onClick={plus2Handler} disabled={count > 8}>+2</button>
             <button onClick={plus5Handler} disabled={count > 5}>+5</button>
+             */}
+             
+            <button onClick={() => countHandler(1)} disabled={count > 9}>+1</button>
+            <button onClick={() => countHandler(2)} disabled={count > 8}>+2</button>
+            <button onClick={() => countHandler(5)} disabled={count > 5}>+5</button>
+            
             <button onClick={addGradeHandler}>Add Grade</button>
             <button onClick={removeAllGradesHandler}>Remove All Grades</button>
 
