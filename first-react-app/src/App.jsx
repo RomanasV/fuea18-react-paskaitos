@@ -1,11 +1,13 @@
 // import BasicsPage from './pages/BasicsPage/BasicsPage'
-import EventsPage from "./pages/EventsPage/EventsPage"
+import CounterPage from "./pages/CounterPage/CounterPage"
+// import EventsPage from "./pages/EventsPage/EventsPage"
 
 function App() {
   return (
     <>
       {/* <BasicsPage /> */}
-      <EventsPage />
+      {/* <EventsPage /> */}
+      <CounterPage />
     </>
   )
 }
