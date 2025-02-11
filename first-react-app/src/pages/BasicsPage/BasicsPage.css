@@ -6,3 +6,7 @@ main {
   display: grid;
   gap: 30px;
 }
+
+.container {
+  background-color: orange;
+}

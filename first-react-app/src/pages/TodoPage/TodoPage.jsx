@@ -1,7 +1,8 @@
 import { useState } from "react"
-import './TodoPage.css'
 import TodoList from "../../components/TodoList/TodoList"
 import TodoForm from "../../components/TodoForm/TodoForm"
+
+import styles from './TodoPage.module.css'
 
 const initialTodos = [
     {
@@ -45,7 +46,7 @@ function TodoPage() {
     }
 
     return (
-        <div id="todo-page">
+        <div id={styles.todoPage}>
             <TodoForm onNewTask={newTaskHandler} />
             <TodoList todos={todos} onDeleteTask={deleteHandler} onDoneTask={doneHandler} />
         </div>

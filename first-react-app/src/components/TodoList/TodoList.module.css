@@ -1,0 +1,8 @@
+.tasksList {
+    display: grid;
+    gap: 20px;
+}
+
+.container {
+    background-color: green;
+}
