@@ -14,7 +14,7 @@ function BasicsPage() {
         <Navigation />
       </Container> */}
 
-      <main>
+      <main className='container'>
         {/* <h1>Mano puslapis</h1> */}
 
         <Services />
