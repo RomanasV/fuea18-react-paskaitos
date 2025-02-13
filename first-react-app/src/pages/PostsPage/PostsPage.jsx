@@ -12,7 +12,7 @@ function PostsPage() {
         //     })
 
         const fetchData = async () => {
-            const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+            const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=15&_expand=user&_embed=comments')
             const data = await res.json()
             setPosts(data)
         }
@@ -31,7 +31,13 @@ function PostsPage() {
                     <ul>
                         {posts.map(post => (
                             <li key={post.id}>
-                                <Link to={`/api-project/posts/${post.id}`}>{post.id}. {post.title}</Link>
+                                <Link to={`/api-project/posts/${post.id}`}>
+                                    {post.id}. {post.title} ({post.comments.length})
+                                </Link>
+
+                                {' - '}
+
+                                <Link to={`/api-project/users/${post.user.id}`}>{post.user.name}</Link>
                             </li>
                         ))}
                     </ul>
